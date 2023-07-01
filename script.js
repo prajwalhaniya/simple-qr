@@ -2,7 +2,6 @@ const button = document.querySelector(".button");
 const qrDiv = document.querySelector(".qr-code");
 
 button.addEventListener("click", () => {
-    console.log("Button clicked. Generate QR");
     const userInput = document.querySelector("#input_text");
 
     if (userInput.value !== "") {
@@ -28,9 +27,7 @@ const generateQR = (inputData) => {
         colorLight : "#ffffff",
         correctLevel : QRCode.CorrectLevel.H
     });
-    console.log(qrCode);
 
-    // to make it downloadale
     const downloadButton = qrDiv.appendChild(document.createElement("button"));
     downloadButton.setAttribute("class", "button");
     const downloadLink = document.createElement("a");
