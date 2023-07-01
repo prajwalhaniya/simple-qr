@@ -11,7 +11,6 @@ button.addEventListener("click", () => {
             qrDiv.innerHTML = "";
             generateQR(userInput);
         }
-        console.log("Continue");
     } else {
         alert("Please enter the text");
     }
